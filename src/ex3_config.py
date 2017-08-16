@@ -15,7 +15,7 @@ FEATURE_SPACE_DIMENSIONS_PLOT_PRECISION = 0.125
 LABEL_COLORS = ['blue', 'red', 'white', 'yellow']
 CLASS_DISTRIBUTIONS = [
     isotropic_normal([5.0, -5.0], 5),
-    #    isotropic_normal([5.0, 5.0], 0.5),
+    isotropic_normal([5.0, 5.0], 0.5),
     isotropic_normal([-7.5, -7.5], 0.75),
     isotropic_normal([-5.0, 5.0], 1.0)]
 

@@ -13,10 +13,14 @@ FEATURE_SPACE_DIMENSIONS_PLOT_PRECISION = 0.125
 LABEL_COLORS = ['blue', 'red', 'white', 'yellow']
 CLASS_DISTRIBUTIONS = [
     # Overlap completo entre las clases
-    isotropic_normal(2.5, 1),
-    isotropic_normal(5.0, 0.5),
+    #isotropic_normal(2.5, 1),
+    #isotropic_normal(2.5, 0.5),
     # Overlap parcial
+    isotropic_normal(4.0, .5),
+    isotropic_normal(6.0, .5),
     # Sin overlap
+    #isotropic_normal(7.5, .5),
+    #isotropic_normal(2.5, .5),
     ]
 
 assert DATASET_SIZE >= 1

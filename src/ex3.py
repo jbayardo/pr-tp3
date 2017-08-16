@@ -111,5 +111,7 @@ if __name__ == '__main__':
         X, Y = np.meshgrid(x, y)
         Z = classify(w, w0, np.c_[X.ravel(), Y.ravel()])
         Z = Z.reshape(X.shape)
+        plt.xlim(FEATURE_SPACE_DIMENSIONS_PLOT_RANGES[0][0], FEATURE_SPACE_DIMENSIONS_PLOT_RANGES[1][0])
+        plt.ylim(FEATURE_SPACE_DIMENSIONS_PLOT_RANGES[0][1], FEATURE_SPACE_DIMENSIONS_PLOT_RANGES[1][1])
         plt.contourf(X, Y, Z, cmap=matplotlib.colors.ListedColormap(LABEL_COLORS[:len(CLASS_DISTRIBUTIONS)]))
         plt.savefig('ex3_decision_boundaries.png')
